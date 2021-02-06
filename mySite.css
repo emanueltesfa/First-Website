@@ -1,0 +1,157 @@
+.me{
+    color:Red;
+}
+.hob{
+    color: blue;
+}
+.edu{
+    color: purple;
+}
+.hs{
+    font-style: italic;
+}
+.college{
+    font-weight: bold;
+}
+.certi{
+    text-decoration:underline  ;
+}
+div a:hover{
+    font-size: 150%;
+}
+
+table{
+    text-align: center;
+}
+.head{
+    background-color: red ;
+}
+.scheduleTable tr:nth-child(even) {
+    background-color: darkgrey;
+}
+
+/*RADIO*/
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.major {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .major {
+  background-color: gray;
+}
+
+.container input:checked ~ .major {
+  background-color: green;
+}
+
+.major:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .major:after {
+  display: block;
+}
+
+.container .major:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
+
+
+
+/*CHECKMARK*/
+
+
+.checkLang {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkLang input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.checkLang:hover input ~ .box {
+    background-color: #ccc;
+}
+
+.checkLang input:checked ~ .box {
+    background-color: #2196F3;
+}
+
+.box:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkLang input:checked ~ .box:after {
+    display: block;
+}
+
+.checkLang .box:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
